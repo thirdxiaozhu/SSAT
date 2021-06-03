@@ -1,0 +1,1275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="zoujiaxv.P5form">
+  <grid id="27dc6" binding="MyPanel" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="20" y="20" width="778" height="481"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <component id="77d54" class="javax.swing.JList" binding="FunctionList">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
+          <gridbag top="20" left="5" bottom="20" right="10" weightx="1.0" weighty="5.0"/>
+        </constraints>
+        <properties>
+          <dropMode value="USE_SELECTION"/>
+          <enabled value="true"/>
+        </properties>
+      </component>
+      <grid id="b3ca1" binding="Card" layout-manager="CardLayout" hgap="0" vgap="0">
+        <constraints>
+          <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag top="0" left="0" bottom="10" right="20" weightx="10.0" weighty="0.0"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <grid id="2c65e" binding="HashPanel" layout-manager="GridBagLayout">
+            <constraints>
+              <card name="Card1"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <hspacer id="a8">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="10.0" weighty="0.0"/>
+                </constraints>
+              </hspacer>
+              <grid id="a3522" binding="HashModelPanel" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="10" bottom="0" right="0"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="15.0"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="8c426" class="javax.swing.JRadioButton" binding="StringHash">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="字符串模式"/>
+                    </properties>
+                  </component>
+                  <component id="7adca" class="javax.swing.JRadioButton" binding="FileHash">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="文件模式"/>
+                    </properties>
+                  </component>
+                  <grid id="13b96" binding="HashCard" layout-manager="CardLayout" hgap="0" vgap="0">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="c462c" binding="StringHashPanel" layout-manager="GridBagLayout">
+                        <constraints>
+                          <card name="Card1"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="19795" class="javax.swing.JTextField" binding="StringHashValue">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                              <gridbag weightx="10.0" weighty="5.0"/>
+                            </constraints>
+                            <properties>
+                              <text value=""/>
+                            </properties>
+                          </component>
+                          <component id="fe0b6" class="javax.swing.JButton" binding="StringHashButton">
+                            <constraints>
+                              <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag top="10" left="0" bottom="10" right="5" weightx="0.5" weighty="5.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="Hash"/>
+                            </properties>
+                          </component>
+                          <component id="2297e" class="javax.swing.JTextField" binding="StringHashResult">
+                            <constraints>
+                              <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                              <gridbag weightx="0.0" weighty="5.0"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <vspacer id="b1807">
+                            <constraints>
+                              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                              <gridbag weightx="0.0" weighty="50.0"/>
+                            </constraints>
+                          </vspacer>
+                          <component id="cc0d4" class="javax.swing.JLabel" binding="StringInputLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag top="0" left="10" bottom="0" right="0" weightx="0.0" weighty="1.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="请输入字符串："/>
+                            </properties>
+                          </component>
+                          <component id="27657" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag top="0" left="10" bottom="0" right="0" weightx="0.0" weighty="1.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="结果："/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="88938" binding="FileHashPanel" layout-manager="GridBagLayout">
+                        <constraints>
+                          <card name="Card3"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="4ab43" class="javax.swing.JTextField" binding="FileHashPath">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                              <gridbag weightx="10.0" weighty="5.0"/>
+                            </constraints>
+                            <properties>
+                              <editable value="false"/>
+                            </properties>
+                          </component>
+                          <component id="16409" class="javax.swing.JButton" binding="FileHashButton">
+                            <constraints>
+                              <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag top="10" left="0" bottom="10" right="5" weightx="0.5" weighty="5.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="Hash"/>
+                            </properties>
+                          </component>
+                          <component id="1b118" class="javax.swing.JTextField" binding="FileHashResult">
+                            <constraints>
+                              <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                              <gridbag weightx="0.0" weighty="5.0"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <vspacer id="85aad">
+                            <constraints>
+                              <grid row="4" column="0" row-span="1" col-span="2" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                              <gridbag weightx="0.0" weighty="50.0"/>
+                            </constraints>
+                          </vspacer>
+                          <component id="26d13" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag top="0" left="10" bottom="0" right="0" weightx="1.0" weighty="1.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="请选择文件："/>
+                            </properties>
+                          </component>
+                          <component id="60d7a" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag top="0" left="10" bottom="0" right="0" weightx="0.0" weighty="1.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="结果："/>
+                            </properties>
+                          </component>
+                          <component id="795ed" class="javax.swing.JButton" binding="HashFileChooseBtn">
+                            <constraints>
+                              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag weightx="10.0" weighty="0.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="选择文件"/>
+                              <verticalAlignment value="0"/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <component id="7a09c" class="javax.swing.JLabel" binding="HashTitle">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="5" left="0" bottom="0" right="0" weightx="1.0" weighty="3.0"/>
+                </constraints>
+                <properties>
+                  <text value="Hash"/>
+                </properties>
+              </component>
+              <component id="3e773" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="3.0" weighty="3.0"/>
+                </constraints>
+                <properties>
+                  <text value="基于SM3算法"/>
+                </properties>
+              </component>
+              <vspacer id="54a38">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="13.0"/>
+                </constraints>
+              </vspacer>
+            </children>
+          </grid>
+          <grid id="175c6" binding="EncryptPanel" layout-manager="GridBagLayout">
+            <constraints>
+              <card name="Card7"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <hspacer id="f6a77">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="10.0" weighty="0.0"/>
+                </constraints>
+              </hspacer>
+              <grid id="59339" binding="EncryModelPanel" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="10" bottom="0" right="10"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="15.0"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <grid id="76763" layout-manager="CardLayout" hgap="0" vgap="0">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="77145" binding="EnPanel" layout-manager="GridBagLayout">
+                        <constraints>
+                          <card name="Card2"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="c84f5" class="javax.swing.JTextField" binding="EnFilePath">
+                            <constraints>
+                              <grid row="1" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                              <gridbag weightx="10.0" weighty="5.0"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <vspacer id="88e84">
+                            <constraints>
+                              <grid row="4" column="1" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                              <gridbag weightx="50.0" weighty="50.0"/>
+                            </constraints>
+                          </vspacer>
+                          <component id="b927c" class="javax.swing.JButton" binding="EnFileChooseBtn">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag top="0" left="0" bottom="0" right="10" weightx="0.5" weighty="5.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="选择文件"/>
+                            </properties>
+                          </component>
+                          <component id="fe120" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag top="0" left="10" bottom="0" right="0" weightx="0.0" weighty="1.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="输入口令："/>
+                            </properties>
+                          </component>
+                          <component id="b9479" class="javax.swing.JButton" binding="goEncry">
+                            <constraints>
+                              <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag weightx="0.0" weighty="0.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="加密"/>
+                            </properties>
+                          </component>
+                          <component id="d3db5" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag top="0" left="10" bottom="0" right="0" weightx="0.5" weighty="1.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="请选择文件："/>
+                            </properties>
+                          </component>
+                          <component id="7f3cb" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag top="0" left="10" bottom="0" right="0" weightx="0.5" weighty="1.0"/>
+                            </constraints>
+                            <properties>
+                              <enabled value="true"/>
+                              <text value="口令长度必须为16字节（128位）！"/>
+                            </properties>
+                          </component>
+                          <component id="2b098" class="javax.swing.JPasswordField" binding="EnPasswd">
+                            <constraints>
+                              <grid row="3" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                              <gridbag weightx="0.0" weighty="0.0"/>
+                            </constraints>
+                            <properties>
+                              <text value=""/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                    </children>
+                  </grid>
+                  <component id="3e8af" class="javax.swing.JRadioButton" binding="ECBButton">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="ECB模式"/>
+                    </properties>
+                  </component>
+                  <component id="d7b6f" class="javax.swing.JRadioButton" binding="CBCButton">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="CBC模式"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <component id="eddb8" class="javax.swing.JLabel" binding="EncryTitle">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag top="5" left="0" bottom="0" right="0" weightx="1.0" weighty="3.0"/>
+                </constraints>
+                <properties>
+                  <text value="文件加密"/>
+                </properties>
+              </component>
+              <component id="a7845" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="3.0" weighty="3.0"/>
+                </constraints>
+                <properties>
+                  <text value="基于SM4算法"/>
+                </properties>
+              </component>
+              <vspacer id="d724">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="13.0"/>
+                </constraints>
+              </vspacer>
+            </children>
+          </grid>
+          <grid id="279ea" binding="DecryptPanel" layout-manager="GridBagLayout">
+            <constraints>
+              <card name="Card2"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <hspacer id="33383">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="10.0" weighty="0.0"/>
+                </constraints>
+              </hspacer>
+              <grid id="c2af0" binding="DecryModelPanel" layout-manager="GridLayoutManager" row-count="2" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="10" bottom="0" right="10"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="15.0"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <grid id="95917" layout-manager="CardLayout" hgap="0" vgap="0">
+                    <constraints>
+                      <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="c4f65" layout-manager="GridBagLayout">
+                        <constraints>
+                          <card name="Card2"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="2bccf" class="javax.swing.JTextField" binding="DeFilePath">
+                            <constraints>
+                              <grid row="1" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                              <gridbag weightx="10.0" weighty="5.0"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <vspacer id="94ec4">
+                            <constraints>
+                              <grid row="4" column="1" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                              <gridbag weightx="50.0" weighty="50.0"/>
+                            </constraints>
+                          </vspacer>
+                          <component id="6606e" class="javax.swing.JButton" binding="DeFileChooseBtn">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag top="0" left="0" bottom="0" right="10" weightx="0.5" weighty="5.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="选择文件"/>
+                            </properties>
+                          </component>
+                          <component id="dc053" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag top="0" left="10" bottom="0" right="0" weightx="0.0" weighty="1.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="输入口令："/>
+                            </properties>
+                          </component>
+                          <component id="b6bfb" class="javax.swing.JButton" binding="goDecry">
+                            <constraints>
+                              <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag weightx="0.0" weighty="0.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="解密"/>
+                            </properties>
+                          </component>
+                          <component id="12b41" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag top="0" left="10" bottom="0" right="0" weightx="0.5" weighty="1.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="请选择文件："/>
+                            </properties>
+                          </component>
+                          <component id="fbbc6" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag top="0" left="10" bottom="0" right="0" weightx="0.5" weighty="1.0"/>
+                            </constraints>
+                            <properties>
+                              <enabled value="true"/>
+                              <text value="口令长度必须为16字节（128位）！"/>
+                            </properties>
+                          </component>
+                          <component id="6d179" class="javax.swing.JPasswordField" binding="DePasswd">
+                            <constraints>
+                              <grid row="3" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                              <gridbag weightx="0.0" weighty="0.0"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                        </children>
+                      </grid>
+                    </children>
+                  </grid>
+                  <component id="e40b" class="javax.swing.JRadioButton" binding="ECBDeBtn">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="ECB模式"/>
+                    </properties>
+                  </component>
+                  <component id="ff476" class="javax.swing.JRadioButton" binding="CBCDeBtn">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="CBC模式"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <component id="c5993" class="javax.swing.JLabel" binding="DecryTitle">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag top="5" left="0" bottom="0" right="0" weightx="1.0" weighty="3.0"/>
+                </constraints>
+                <properties>
+                  <text value="文件解密"/>
+                </properties>
+              </component>
+              <component id="febbe" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="3.0" weighty="3.0"/>
+                </constraints>
+                <properties>
+                  <text value="基于SM4算法"/>
+                </properties>
+              </component>
+              <vspacer id="c0d8a">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="13.0"/>
+                </constraints>
+              </vspacer>
+            </children>
+          </grid>
+          <grid id="4efba" binding="SignaturePanel" layout-manager="GridBagLayout">
+            <constraints>
+              <card name="Card3"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <hspacer id="273b9">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="10.0" weighty="0.0"/>
+                </constraints>
+              </hspacer>
+              <grid id="c5ec" binding="SignPanel" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="10" bottom="0" right="10"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="15.0"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <grid id="9cfb0" layout-manager="CardLayout" hgap="0" vgap="0">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="5" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="bb91e" layout-manager="GridBagLayout">
+                        <constraints>
+                          <card name="Card2"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="7ac6d" class="javax.swing.JTextField" binding="SignFilePath">
+                            <constraints>
+                              <grid row="1" column="1" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                              <gridbag weightx="10.0" weighty="5.0"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <vspacer id="d87e1">
+                            <constraints>
+                              <grid row="5" column="1" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                              <gridbag weightx="50.0" weighty="50.0"/>
+                            </constraints>
+                          </vspacer>
+                          <component id="2b232" class="javax.swing.JButton" binding="SignFileChooseBtn">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag top="0" left="0" bottom="0" right="10" weightx="0.5" weighty="5.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="选择文件"/>
+                            </properties>
+                          </component>
+                          <component id="4f353" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag top="0" left="10" bottom="0" right="0" weightx="0.0" weighty="1.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="输入口令："/>
+                            </properties>
+                          </component>
+                          <component id="3945e" class="javax.swing.JButton" binding="goSign">
+                            <constraints>
+                              <grid row="5" column="5" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag weightx="0.0" weighty="0.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="签名"/>
+                            </properties>
+                          </component>
+                          <component id="c2f0f" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag top="0" left="10" bottom="0" right="0" weightx="0.5" weighty="1.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="请选择文件："/>
+                            </properties>
+                          </component>
+                          <component id="63e32" class="javax.swing.JPasswordField" binding="SignPasswd">
+                            <constraints>
+                              <grid row="3" column="0" row-span="1" col-span="6" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                              <gridbag weightx="0.0" weighty="0.0"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <grid id="f2865" layout-manager="GridBagLayout">
+                            <constraints>
+                              <grid row="4" column="0" row-span="1" col-span="6" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                              <gridbag weightx="0.0" weighty="10.0"/>
+                            </constraints>
+                            <properties/>
+                            <border type="none"/>
+                            <children>
+                              <component id="7ba38" class="javax.swing.JButton" binding="EditSignInfoBtn">
+                                <constraints>
+                                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                                  <gridbag weightx="3.0" weighty="0.0"/>
+                                </constraints>
+                                <properties>
+                                  <text value="编辑密钥信息"/>
+                                </properties>
+                              </component>
+                              <component id="4e52e" class="javax.swing.JButton" binding="CheckSignInfoBtn">
+                                <constraints>
+                                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                                  <gridbag weightx="3.0" weighty="0.0"/>
+                                </constraints>
+                                <properties>
+                                  <text value="检查密钥信息"/>
+                                </properties>
+                              </component>
+                              <hspacer id="3b93f">
+                                <constraints>
+                                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                                  <gridbag weightx="5.0" weighty="0.0"/>
+                                </constraints>
+                              </hspacer>
+                              <hspacer id="65988">
+                                <constraints>
+                                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                                  <gridbag weightx="2.0" weighty="0.0"/>
+                                </constraints>
+                              </hspacer>
+                              <hspacer id="abad7">
+                                <constraints>
+                                  <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                                  <gridbag weightx="2.0" weighty="0.0"/>
+                                </constraints>
+                              </hspacer>
+                            </children>
+                          </grid>
+                        </children>
+                      </grid>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <component id="fab83" class="javax.swing.JLabel" binding="SignTitle">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag top="5" left="0" bottom="0" right="0" weightx="1.0" weighty="3.0"/>
+                </constraints>
+                <properties>
+                  <text value="数字签名"/>
+                </properties>
+              </component>
+              <component id="dd66e" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="3.0" weighty="3.0"/>
+                </constraints>
+                <properties>
+                  <text value="基于SM3withSM2"/>
+                </properties>
+              </component>
+              <vspacer id="1cd67">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="13.0"/>
+                </constraints>
+              </vspacer>
+            </children>
+          </grid>
+          <grid id="764fc" binding="AuthenticationPanel" layout-manager="GridBagLayout">
+            <constraints>
+              <card name="Card4"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <hspacer id="beaa">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="10.0" weighty="0.0"/>
+                </constraints>
+              </hspacer>
+              <grid id="d486d" binding="AuthPanel" layout-manager="GridLayoutManager" row-count="1" column-count="5" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="10" bottom="0" right="10"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="15.0"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <grid id="dbcf7" layout-manager="CardLayout" hgap="0" vgap="0">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="5" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="ea183" layout-manager="GridBagLayout">
+                        <constraints>
+                          <card name="Card2"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <vspacer id="49946">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="4" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                              <gridbag weightx="50.0" weighty="50.0"/>
+                            </constraints>
+                          </vspacer>
+                          <component id="5bdc0" class="javax.swing.JButton" binding="goAuthentic">
+                            <constraints>
+                              <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag weightx="0.0" weighty="0.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="验证"/>
+                            </properties>
+                          </component>
+                          <grid id="df6f1" layout-manager="GridBagLayout">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="5" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                              <gridbag weightx="0.0" weighty="0.0"/>
+                            </constraints>
+                            <properties/>
+                            <border type="none"/>
+                            <children>
+                              <component id="7b372" class="javax.swing.JLabel">
+                                <constraints>
+                                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                                  <gridbag weightx="0.0" weighty="0.0"/>
+                                </constraints>
+                                <properties>
+                                  <text value="被签名文件"/>
+                                </properties>
+                              </component>
+                              <hspacer id="7a29a">
+                                <constraints>
+                                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                                  <gridbag weightx="0.2" weighty="0.0"/>
+                                </constraints>
+                              </hspacer>
+                              <component id="12377" class="javax.swing.JTextField" binding="AuthSignedPath">
+                                <constraints>
+                                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                    <preferred-size width="150" height="-1"/>
+                                  </grid>
+                                  <gridbag weightx="10.0" weighty="0.0"/>
+                                </constraints>
+                                <properties/>
+                              </component>
+                              <hspacer id="dca1">
+                                <constraints>
+                                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                                  <gridbag weightx="0.0" weighty="0.0"/>
+                                </constraints>
+                              </hspacer>
+                              <component id="1fd6f" class="javax.swing.JButton" binding="AuthSignedBtn">
+                                <constraints>
+                                  <grid row="0" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                                  <gridbag weightx="0.0" weighty="0.0"/>
+                                </constraints>
+                                <properties>
+                                  <text value="选择文件"/>
+                                </properties>
+                              </component>
+                              <component id="78411" class="javax.swing.JTextField" binding="AuthSignDataPath">
+                                <constraints>
+                                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                    <preferred-size width="150" height="-1"/>
+                                  </grid>
+                                  <gridbag weightx="10.0" weighty="0.0"/>
+                                </constraints>
+                                <properties/>
+                              </component>
+                              <hspacer id="653ef">
+                                <constraints>
+                                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                                  <gridbag weightx="0.2" weighty="0.0"/>
+                                </constraints>
+                              </hspacer>
+                              <component id="96c19" class="javax.swing.JLabel">
+                                <constraints>
+                                  <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                                  <gridbag weightx="0.0" weighty="0.0"/>
+                                </constraints>
+                                <properties>
+                                  <text value="签名值文件"/>
+                                </properties>
+                              </component>
+                              <component id="afa69" class="javax.swing.JButton" binding="AuthSignDataBtn">
+                                <constraints>
+                                  <grid row="1" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                                  <gridbag weightx="0.0" weighty="0.0"/>
+                                </constraints>
+                                <properties>
+                                  <text value="选择文件"/>
+                                </properties>
+                              </component>
+                              <hspacer id="406b7">
+                                <constraints>
+                                  <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                                  <gridbag weightx="0.0" weighty="0.0"/>
+                                </constraints>
+                              </hspacer>
+                              <component id="3f46" class="javax.swing.JTextField" binding="AuthStorePath">
+                                <constraints>
+                                  <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                    <preferred-size width="150" height="-1"/>
+                                  </grid>
+                                  <gridbag weightx="10.0" weighty="0.0"/>
+                                </constraints>
+                                <properties/>
+                              </component>
+                              <hspacer id="5511e">
+                                <constraints>
+                                  <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                                  <gridbag weightx="0.2" weighty="0.0"/>
+                                </constraints>
+                              </hspacer>
+                              <component id="2f797" class="javax.swing.JLabel">
+                                <constraints>
+                                  <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                                  <gridbag weightx="0.0" weighty="0.0"/>
+                                </constraints>
+                                <properties>
+                                  <text value="密钥库文件"/>
+                                </properties>
+                              </component>
+                              <component id="d5790" class="javax.swing.JButton" binding="AuthStoreBtn">
+                                <constraints>
+                                  <grid row="2" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                                  <gridbag weightx="0.0" weighty="0.0"/>
+                                </constraints>
+                                <properties>
+                                  <text value="选择文件"/>
+                                </properties>
+                              </component>
+                              <hspacer id="dfa63">
+                                <constraints>
+                                  <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                                  <gridbag weightx="0.0" weighty="0.0"/>
+                                </constraints>
+                              </hspacer>
+                              <component id="55237" class="javax.swing.JPasswordField" binding="AuthPassword">
+                                <constraints>
+                                  <grid row="3" column="2" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                    <preferred-size width="150" height="-1"/>
+                                  </grid>
+                                  <gridbag weightx="0.0" weighty="0.0"/>
+                                </constraints>
+                                <properties/>
+                              </component>
+                              <component id="3254b" class="javax.swing.JLabel">
+                                <constraints>
+                                  <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                                  <gridbag weightx="0.0" weighty="0.0"/>
+                                </constraints>
+                                <properties>
+                                  <text value="输入口令"/>
+                                </properties>
+                              </component>
+                              <hspacer id="d029c">
+                                <constraints>
+                                  <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                                  <gridbag weightx="0.2" weighty="0.0"/>
+                                </constraints>
+                              </hspacer>
+                            </children>
+                          </grid>
+                        </children>
+                      </grid>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <component id="1f8ab" class="javax.swing.JLabel" binding="AuthTitle">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="1" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag top="5" left="0" bottom="0" right="0" weightx="1.0" weighty="3.0"/>
+                </constraints>
+                <properties>
+                  <text value="签名验证"/>
+                </properties>
+              </component>
+              <component id="e3885" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="3.0" weighty="3.0"/>
+                </constraints>
+                <properties>
+                  <text value="基于SM3withSM2"/>
+                </properties>
+              </component>
+              <vspacer id="2693f">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="13.0"/>
+                </constraints>
+              </vspacer>
+            </children>
+          </grid>
+          <grid id="a69a2" binding="MACPanel" layout-manager="GridBagLayout">
+            <constraints>
+              <card name="Card5"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <hspacer id="3540c">
+                <constraints>
+                  <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="10.0" weighty="0.0"/>
+                </constraints>
+              </hspacer>
+              <grid id="809f0" binding="MACModelPanel" layout-manager="GridLayoutManager" row-count="3" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+                <margin top="0" left="10" bottom="0" right="10"/>
+                <constraints>
+                  <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="15.0"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <component id="1a7c2" class="javax.swing.JRadioButton" binding="StringMAC">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="字符串模式"/>
+                    </properties>
+                  </component>
+                  <component id="9191d" class="javax.swing.JRadioButton" binding="FileMAC">
+                    <constraints>
+                      <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties>
+                      <text value="文件模式"/>
+                    </properties>
+                  </component>
+                  <grid id="a0125" binding="MACCard" layout-manager="CardLayout" hgap="0" vgap="0">
+                    <constraints>
+                      <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <grid id="aa027" binding="StringMACPanel" layout-manager="GridBagLayout">
+                        <constraints>
+                          <card name="Card2"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="4da71" class="javax.swing.JTextField" binding="StringMACValue">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                              <gridbag weightx="10.0" weighty="5.0"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <vspacer id="37c7a">
+                            <constraints>
+                              <grid row="4" column="1" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                              <gridbag weightx="50.0" weighty="50.0"/>
+                            </constraints>
+                          </vspacer>
+                          <component id="32370" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag top="0" left="10" bottom="0" right="0" weightx="0.0" weighty="1.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="输入口令："/>
+                            </properties>
+                          </component>
+                          <component id="fd831" class="javax.swing.JButton" binding="StringMACBtn">
+                            <constraints>
+                              <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag weightx="0.0" weighty="0.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="加密"/>
+                            </properties>
+                          </component>
+                          <component id="94aea" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag top="0" left="10" bottom="0" right="0" weightx="0.5" weighty="1.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="请输入字符串："/>
+                            </properties>
+                          </component>
+                          <component id="a0b83" class="javax.swing.JPasswordField" binding="StringMACPasswd">
+                            <constraints>
+                              <grid row="3" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                              <gridbag weightx="0.0" weighty="0.0"/>
+                            </constraints>
+                            <properties>
+                              <text value=""/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                      <grid id="96824" binding="FileMACPanel" layout-manager="GridBagLayout">
+                        <constraints>
+                          <card name="Card1"/>
+                        </constraints>
+                        <properties/>
+                        <border type="none"/>
+                        <children>
+                          <component id="3beae" class="javax.swing.JTextField" binding="FileMACPath">
+                            <constraints>
+                              <grid row="1" column="1" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                              <gridbag weightx="10.0" weighty="5.0"/>
+                            </constraints>
+                            <properties/>
+                          </component>
+                          <vspacer id="9be02">
+                            <constraints>
+                              <grid row="4" column="1" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                              <gridbag weightx="50.0" weighty="50.0"/>
+                            </constraints>
+                          </vspacer>
+                          <component id="8c428" class="javax.swing.JButton" binding="MACFileChooseBtn">
+                            <constraints>
+                              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag top="0" left="0" bottom="0" right="10" weightx="0.5" weighty="5.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="选择文件"/>
+                            </properties>
+                          </component>
+                          <component id="d345d" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag top="0" left="10" bottom="0" right="0" weightx="0.0" weighty="1.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="输入口令："/>
+                            </properties>
+                          </component>
+                          <component id="ce08c" class="javax.swing.JButton" binding="FileMACBtn">
+                            <constraints>
+                              <grid row="4" column="4" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag weightx="0.0" weighty="0.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="加密"/>
+                            </properties>
+                          </component>
+                          <component id="8ece0" class="javax.swing.JLabel">
+                            <constraints>
+                              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="0" use-parent-layout="false"/>
+                              <gridbag top="0" left="10" bottom="0" right="0" weightx="0.5" weighty="1.0"/>
+                            </constraints>
+                            <properties>
+                              <text value="请选择文件："/>
+                            </properties>
+                          </component>
+                          <component id="8e3cc" class="javax.swing.JPasswordField" binding="FileMACPasswd">
+                            <constraints>
+                              <grid row="3" column="0" row-span="1" col-span="5" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                                <preferred-size width="150" height="-1"/>
+                              </grid>
+                              <gridbag weightx="0.0" weighty="0.0"/>
+                            </constraints>
+                            <properties>
+                              <text value=""/>
+                            </properties>
+                          </component>
+                        </children>
+                      </grid>
+                    </children>
+                  </grid>
+                </children>
+              </grid>
+              <component id="ee9cb" class="javax.swing.JLabel" binding="MACTitle">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="5" left="0" bottom="0" right="0" weightx="1.0" weighty="3.0"/>
+                </constraints>
+                <properties>
+                  <text value="MAC码计算"/>
+                </properties>
+              </component>
+              <component id="65630" class="javax.swing.JLabel">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="3.0" weighty="3.0"/>
+                </constraints>
+                <properties>
+                  <text value="基于ZUC"/>
+                </properties>
+              </component>
+              <vspacer id="552e4">
+                <constraints>
+                  <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="13.0"/>
+                </constraints>
+              </vspacer>
+            </children>
+          </grid>
+          <grid id="72e5a" binding="InfoPanel" layout-manager="GridBagLayout">
+            <constraints>
+              <card name="Card6"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <hspacer id="a9b1b">
+                <constraints>
+                  <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="10.0" weighty="0.0"/>
+                </constraints>
+              </hspacer>
+              <grid id="602fc" binding="InfoModelPanel" layout-manager="GridBagLayout">
+                <constraints>
+                  <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="0.0" weighty="15.0"/>
+                </constraints>
+                <properties/>
+                <border type="none"/>
+                <children>
+                  <hspacer id="ba3fc">
+                    <constraints>
+                      <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="1.0" weighty="0.0"/>
+                    </constraints>
+                  </hspacer>
+                  <component id="7244f" class="javax.swing.JLabel" binding="ToolTitle">
+                    <constraints>
+                      <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="5.0" weighty="0.0"/>
+                    </constraints>
+                    <properties>
+                      <text value="国密算法工具 State Secret Algorithm Tool"/>
+                    </properties>
+                  </component>
+                  <hspacer id="149b4">
+                    <constraints>
+                      <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="0.0"/>
+                    </constraints>
+                  </hspacer>
+                  <component id="517ee" class="javax.swing.JLabel" binding="InfoIcon">
+                    <constraints>
+                      <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="2.0" weighty="0.0"/>
+                    </constraints>
+                    <properties>
+                      <text value="Label"/>
+                    </properties>
+                  </component>
+                  <component id="f2ac6" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="0.0"/>
+                    </constraints>
+                    <properties>
+                      <text value="by: 190146841 邹嘉旭"/>
+                    </properties>
+                  </component>
+                  <vspacer id="a0a79">
+                    <constraints>
+                      <grid row="4" column="3" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="0.0"/>
+                    </constraints>
+                  </vspacer>
+                  <component id="d4426" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="5" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="0.0"/>
+                    </constraints>
+                    <properties>
+                      <text value="©2021 Zou Jiaxv. All Rights Reserved."/>
+                    </properties>
+                  </component>
+                  <component id="3d9f8" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="2" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="0.0"/>
+                    </constraints>
+                    <properties>
+                      <text value="VM: OracleJDK 64-Bit Server VM"/>
+                    </properties>
+                  </component>
+                  <component id="8128" class="javax.swing.JLabel">
+                    <constraints>
+                      <grid row="3" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+                      <gridbag weightx="0.0" weighty="0.0"/>
+                    </constraints>
+                    <properties>
+                      <text value="Powered by BouncyCastle"/>
+                    </properties>
+                  </component>
+                </children>
+              </grid>
+              <component id="c25ab" class="javax.swing.JLabel" binding="InfoTitle">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="9" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="5" left="0" bottom="0" right="0" weightx="1.0" weighty="3.0"/>
+                </constraints>
+                <properties>
+                  <text value="软件信息"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
