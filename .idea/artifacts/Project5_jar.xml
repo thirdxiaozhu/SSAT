@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact name="Project5:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Project5_jar</output-path>
+    <root id="root">
+      <element id="archive" name="Project5.jar">
+        <element id="directory" name="META-INF">
+          <element id="file-copy" path="$PROJECT_DIR$/src/resources/META-INF/MANIFEST.MF" />
+        </element>
+        <element id="module-output" name="Project5" />
+      </element>
+      <element id="directory" name="libs">
+        <element id="file-copy" path="$PROJECT_DIR$/../bcpkix-jdk15on-168.jar" />
+        <element id="file-copy" path="$PROJECT_DIR$/../bcprov-jdk15on-168.jar" />
+      </element>
+    </root>
+  </artifact>
+</component>

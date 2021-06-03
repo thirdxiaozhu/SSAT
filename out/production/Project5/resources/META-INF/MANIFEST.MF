@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: zoujiaxv.Main
+Class-Path: libs/bcprov-jdk15on-168.jar libs/bcpkix-jdk15on-168.jar
+
